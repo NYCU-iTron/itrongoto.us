@@ -1,17 +1,12 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+title: iTron
+subtitle:
+email: itron2025@gmail.com
+description: 來自交大機械系的學生團隊，專注於機械設計與控制，用創意和行動把天馬行空變成真實機器！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://NYCU-iTron.github.io"
 author:
-street_address:
-city:
-state:
-zip_code:
-country:
-phone:
+address:
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
@@ -22,20 +17,20 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/andrewbanchich
-  GitLab:
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
-  Instagram:
-  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
-  Twitter: https://twitter.com/andrewbanchich
-  Facebook:
-  Slack:
+  GitHub: https://github.com/NYCU-iTron
+  Instagram: https://www.instagram.com/itron_nycu/
+  Facebook: https://www.facebook.com/NCTU.iTron
 
 # build settings
 markdown: kramdown
 
 sass:
   style: compressed
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 exclude:
 - "*.gemspec"
