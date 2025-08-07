@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: allposts
 title: 文章
 landing-title: '文章'
 permalink: /blog/
