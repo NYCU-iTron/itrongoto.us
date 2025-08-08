@@ -1,7 +1,14 @@
 # Forty - Jekyll Theme
 
-
 ## Usage
+
+To deploy the website locally, run
+
+```bash
+make
+```
+
+## Development
 
 For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
 or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
@@ -15,7 +22,7 @@ Simply fork this repository and start editing the `_config.yml` file!
 
 Original README from HTML5 UP:
 
-```
+```text
 Forty by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
