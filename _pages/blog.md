@@ -1,9 +1,9 @@
 ---
 layout: allposts
-title: 文章
-landing-title: '文章'
+title: 專欄
+landing-title: '專欄'
 permalink: /blog/
-description: Lorem ipsum dolor est
+description: Blog
 nav-menu: true
 ---
 

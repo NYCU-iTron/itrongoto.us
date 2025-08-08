@@ -2,7 +2,7 @@
 title: 加入我們
 layout: landing
 permalink: /joinus/
-description: 'Lorem ipsum'
+description: 'Join us'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---

@@ -2,7 +2,7 @@
 layout: page
 title: 團隊成果
 permalink: /achievements/
-description: Lorem ipsum dolor est
+description: Team Achievements
 image: assets/images/pic11.jpg
 nav-menu: true
 ---
