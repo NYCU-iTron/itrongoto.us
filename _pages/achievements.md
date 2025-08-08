@@ -3,7 +3,7 @@ layout: page
 title: 團隊成果
 permalink: /achievements/
 description: Team Achievements
-image: assets/images/pic11.jpg
+image: assets/images/achievements.webp
 nav-menu: true
 ---
 
