@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: landing
 title: 團隊成果
 permalink: /achievements/
 description: Team Achievements
@@ -7,4 +7,27 @@ image: assets/images/achievements.webp
 nav-menu: true
 ---
 
-Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+我們秉持做中學的精神，藉由一次次的比賽磨練自己、持續提升能力。無論得名與否，每一次經驗都是團隊共同成長的契機。
+每年十月的 TDK 競賽是我們社團的年度主軸，同時我們也積極參加 ASME、領航盃等其他國內外賽事。歷年來，透過這些比賽我們累積了豐富經驗，並取得不錯的成績。
+
+## TDK 盃全國大專校院創思設計與製作競賽
+
+- 2025：敬請期待
+- 2022：自動組 佳作
+
+## 國際太空站 KIBO 機器人程式設計挑戰賽 (Kibo-RPC)
+
+- 2025：台灣區預賽第一名，將於 11 月赴日參加決賽
+
+## 國研盃智慧機械競賽 (ASME)
+
+- 2025：設計競賽 第三名
+- 2023：設計競賽 第三名
+- 2022：設計競賽 佳作
+- 2021：演講競賽 第二名、設計競賽 第三名
+
+## 專案作品
+
+<!-- 今年的那台 -->
+<!-- [圖片]() -->
+<!-- 描述 -->
