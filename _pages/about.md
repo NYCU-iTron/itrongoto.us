@@ -1,28 +1,27 @@
 ---
-layout: page
+layout: landing
 title: 關於我們
 permalink: /about/
 description: About us
 image: assets/images/about.webp
 nav-menu: true
 ---
+**iTron** 由一群渴望將理想拼成現實的機械系同學組成。我們參與各種比賽（如 **TDK**、**ASME**），將腦海中構思的創意付諸實現。  
 
-# 關於 <strong>iTron</strong>
+<!-- ![iTron 隊徽](/assets/images/Logo.webp) -->
 
-<div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
 
-<div style="flex: 1; min-width: 250px;">
-<p><strong>iTron</strong> 由一群渴望將理想拼成現實的機械系同學組成，我們參與各種比賽，像是 TDK 或 ASME，將腦海中構思的創意付諸到現實中。</p>
+在社團內，我們聚集各路好手，依據興趣和專長分為：  
+- **機構組**  
+- **軟體組**  
 
-<p>在社團內，我們聚集各路好手，依據各自的興趣和專長區分出 <strong>機構組</strong> 及 <strong>軟體組</strong>，支撐著我們比賽的技術核心，並肩負著傳承技術的責任。</p>
+這兩大組別支撐著我們比賽的技術核心，同時也肩負技術傳承的責任。除了在比賽中打磨技術，**iTron 更是一個尋找隊友的平台**。  
+透過比賽與交流，我們成為彼此互相砥礪技術的夥伴。  
 
-<p>除了在比賽中打磨技術，<strong>iTron</strong> 更提供一個尋找隊友的平台，透過比賽交流成為彼此互相砥礪技術的夥伴。</p>
+無論你是：  
+- 想要累積實作經驗  
+- 想要尋找志同道合的同伴  
 
-<p>無論你是想累積實作經驗，亦或是想尋找志同道合的同伴，<strong>iTron</strong> 都歡迎你的加入！</p>
-</div>
+**iTron 都歡迎你的加入！**
 
-<div style="flex: 0 0 auto; min-width: 200px;">
-<img src="path/to/your/image.jpg" alt="iTron 團隊照片" style="max-width: 300px; width: 100%; height: auto;">
-</div>
-
-</div>
+<img src="/assets/images/Logo.webp" alt="iTron 團隊活動照" width="400"/>
