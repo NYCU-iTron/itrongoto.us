@@ -1,37 +1,26 @@
 ---
-layout: page
+layout: landing
 title: 加入我們
 permalink: /join/
 description: Join us
 image: assets/images/join.webp
 nav-menu: true
 ---
-# 加入我們！
+想累積比賽經驗嗎？
+想製作理想中的機器卻缺乏資源嗎？
+想找到志同道合、一起奮戰的夥伴嗎？
 
-<div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+在 iTron，我們集結來自各方的夥伴，一起參加各種比賽，將專業理論轉化為實際應用。透過一次次的實作與競賽經驗，你不僅能學到書本上沒有的技能，更能培養解決問題、團隊協作與創意思維的能力。
 
-<div style="flex: 1; min-width: 250px;">
+當你想動手打造屬於自己的機器時，熱心的學長姐會提供寶貴經驗與實務建議。我們備有各種工具、零件與材料，讓你的想法從構思變成真實作品。無論是機械設計、電子控制，還是程式與 AI 應用，都能在這裡找到支持與資源。
 
-<p>想累積比賽經驗嗎？<br>
-想製作理想中的機器人卻缺乏資源嗎？<br>
-想找到志同道合、一起奮戰的夥伴嗎？</p>
+此外，iTron 也提供平台讓每位成員交流，不論是課業心得或大學生活經驗，這裡不只是實作的場域，更是一個激發創意、培養競賽實力的學習社群。
 
-<p>在 <strong>iTron</strong>，我們會集結來自各方的夥伴，一起參加各種比賽，將專業理論轉化為實際應用。<br>
-當你想動手打造屬於自己的機器時，還有熱心的學長姐提供經驗與建議，並且備有各種工具與材料，讓你的想法得以實現！</p>
+📢 現在就加入我們吧！一起挑戰自我，打造理想中的機器，並在比賽與專案中創造屬於自己的成就！
 
-<h3>📢 現在就加入我們吧！</h3>
+**新生說明會**  
+📅 9 月 11 日（四）  
+🕖 晚上 7:00  
+📍 工五大廳集合  
 
-<p><strong>新生說明會</strong><br>
-📅 9 月 11 日（四）<br>
-🕖 晚上 7:00<br>
-📍 工程五館大廳集合</p>
-
-<p><strong>我們不見不散！</strong></p>
-
-</div>
-
-<div style="flex: 0 0 auto; min-width: 200px;">
-<img src="/assets/images/join_iTron.webp" alt="iTron 招募照片" style="max-width: 500px; width: 100%; height: auto;">
-</div>
-
-</div>
+我們不見不散！
