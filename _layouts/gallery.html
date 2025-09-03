@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  <div id="main" class="alt">
+    <section id="content">
+      <div class="inner">
+        <!-- Display the image from newest to oldest -->
+        {% assign gallery = site.static_files 
+          | where_exp: "file", "file.path contains '/assets/images/gallery/'" 
+          | sort: "path" 
+          | reverse %}
+
+        <!-- Loop through the images -->
+        <div class="gallery">
+        {% for item in gallery %}
+          <div class="gallery-item">
+            <img src="{{ item.path | relative_url }}" alt="{{ item.name }}">
+          </div>
+        {% endfor %}
+
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  {% include footer.html %}
+
+</body>
+</html>
