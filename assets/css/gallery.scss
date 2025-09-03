@@ -1,0 +1,27 @@
+.gallery {
+  column-count: 4;      /* 桌機四欄 */
+  column-gap: 15px;     /* 欄與欄之間間距 */
+}
+
+.gallery-item {
+  break-inside: avoid;  /* 避免圖片被拆開 */
+  margin-bottom: 15px;  /* 圖片下方留空隙 */
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    column-count: 1;
+  }
+}

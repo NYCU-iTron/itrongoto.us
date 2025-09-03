@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: gallery
 title: 照片牆
 permalink: /gallery/
 description: Gallery
