@@ -25,7 +25,7 @@
         <div class="gallery">
         {% for item in gallery %}
           <div class="gallery-item">
-            <img src="{{ item.path | relative_url }}" alt="{{ item.name }}">
+            <img src="{{ item.path | relative_url }}" alt="{{ item.name }}" loading="lazy">
           </div>
         {% endfor %}
 
