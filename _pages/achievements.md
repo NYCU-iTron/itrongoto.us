@@ -7,69 +7,93 @@ image: assets/images/achievements.webp
 nav-menu: true
 ---
 
-我們秉持做中學的精神，藉由一次次的比賽磨練自己、持續提升能力。無論得名與否，每一次經驗都是團隊共同成長的契機。
-每年十月的 TDK 競賽是我們社團的年度主軸，同時我們也積極參加 ASME、領航盃等其他國內外賽事。歷年來，透過這些比賽我們累積了豐富經驗，並取得不錯的成績。
+<div style="max-width:800px; margin:auto; padding:20px; line-height:1.7;">
 
-## TDK 盃全國大專校院創思設計與製作競賽
+<p>我們秉持做中學的精神，藉由一次次的比賽磨練自己、持續提升能力。以下為近年的 iTron 比賽成果：</p>
 
-全國歷史最悠久、影響力最廣的大專院校機器人創意設計競賽之一，由教育部指導、財團法人TDK文教基金會贊助、不同大學主辦。比賽自1997年舉辦至今，鼓勵學生結合創意、設計、工程、人文，透過團隊合作培養創新與實作能力。
+<!-- TDK 盃 -->
+<details style="border:1px solid #ddd; border-radius:8px; padding:1rem; margin-bottom:1.5rem;">
+  <summary style="font-weight:600; font-size:1.1em; cursor:pointer;">
+    TDK 盃全國大專校院創思設計與製作競賽 - 2025 自動組 佳作
+  </summary>
+  <div style="margin-top:0.75rem;">
+    <p>全國歷史最悠久的機器人創意設計競賽，由教育部指導、TDK文教基金會贊助。</p>
+    <h4>技術挑戰</h4>
+    <ul>
+      <li>自動組：自主導航、感測與決策演算法</li>
+      <li>遙控組：即時操控、機構設計與任務反應</li>
+    </ul>
+    <div style="text-align:center; margin:0.75rem 0;">
+    <img src="/assets/images/tdk.webp" alt="TDK"
+        style="max-width:80%; height:auto; max-height:200px; object-fit:contain; border-radius:6px;">
+    </div>
+    <h4>歷屆成果</h4>
+    <table style="border-collapse:collapse; width:100%; margin-top:0.5rem;">
+      <tr>
+        <th style="border-bottom:1px solid #ccc; text-align:left;">年份</th>
+        <th style="border-bottom:1px solid #ccc; text-align:left;">成績</th>
+      </tr>
+      <tr><td>2025</td><td>自動組 佳作</td></tr>
+      <tr><td>2022</td><td>自動組 佳作</td></tr>
+    </table>
+  </div>
 
-### 技術挑戰
+</details>
 
-參賽隊伍需依照每年主題，自行設計與製作機器人或自動化裝置，並在現場完成指定挑戰。比賽涵蓋：
+<!-- Kibo-RPC -->
+<details style="border:1px solid #ddd; border-radius:8px; padding:1rem; margin-bottom:1.5rem;">
+    <summary style="font-weight:600; font-size:1.1em; cursor:pointer;">
+        Kibo-RPC - 2025 台灣區預賽第一名
+    </summary>
+    <div style="margin-top:0.75rem;">
+    <p>
+        Kibo-RPC 由日本 JAXA 與美國 NASA 共同主辦，為亞太地區重要的太空科技競賽。參賽隊伍需以程式設計操控國際太空站內的自由飛行機器人「Astrobee」，完成導航、影像辨識與任務規劃等挑戰，模擬真實太空環境中的機器人操作。
+    </p>
+    <p>
+        本競賽結合太空科技與資訊工程技術，考驗參賽團隊在人工智慧、航太控制及嵌入式系統等領域的應用能力，具高度學術與實務價值，並提供學生與各國頂尖團隊技術交流的機會。
+    </p>
+    <h4 style="margin-top:1rem;">技術挑戰</h4>
+    <ul style="margin-top:0.25rem; margin-bottom:1rem;">
+        <li>路徑規劃</li>
+        <li>影像辨識</li>
+        <li>任務策略</li>
+    </ul>
+    <div style="text-align:center; margin:0.75rem 0;">
+    <img src="/assets/images/kibo.webp" alt="Kibo-RPC"
+        style="max-width:80%; height:auto; max-height:200px; object-fit:contain; border-radius:6px;">
+    </div>
+    <h4>歷屆成果</h4>
+    <table style="border-collapse:collapse; width:100%; margin-top:0.5rem;">
+      <tr>
+        <th style="border-bottom:1px solid #ccc; text-align:left;">年份</th>
+        <th style="border-bottom:1px solid #ccc; text-align:left;">成績</th>
+      </tr>
+      <tr><td>2025</td><td>台灣區預賽第一名，將於 2026 年赴日決賽</td></tr>
+    </table>
+  </div>
+</details>
 
-- 自動組：自主導航、感測與決策演算法。
-- 遙控組：即時操控、機構設計與任務反應。
+<!-- ASME -->
+<details style="border:1px solid #ddd; border-radius:8px; padding:1rem; margin-bottom:1.5rem;">
+  <summary style="font-weight:600; font-size:1.1em; cursor:pointer;">
+    ASME 國研盃智慧機械競賽 - 2025 設計競賽 第三名
+  </summary>
+  <div style="margin-top:0.75rem;">
+    <p>
+        由 ASME 台灣分會與國家實驗研究院儀科中心舉辦，競賽分設計與演講兩大類，強調機械設計、動力裝置、系統整合與實作能力。
+    </p>
+    <h4>歷屆成果</h4>
+    <table style="border-collapse:collapse; width:100%; margin-top:0.5rem;">
+      <tr>
+        <th style="border-bottom:1px solid #ccc; text-align:left;">年份</th>
+        <th style="border-bottom:1px solid #ccc; text-align:left;">成績</th>
+      </tr>
+      <tr><td>2025</td><td>設計競賽 第三名</td></tr>
+      <tr><td>2023</td><td>設計競賽 第三名</td></tr>
+      <tr><td>2022</td><td>設計競賽 佳作</td></tr>
+      <tr><td>2021</td><td>演講競賽 第二名、設計競賽 第三名</td></tr>
+    </table>
+  </div>
+</details>
 
-### 歷屆成果
-
-- 2025：敬請期待
-- 2022：自動組 佳作
-
-<img src="/assets/images/tdk.webp" alt="tdk" style="max-width:40%;">
-
-## 國際太空站 KIBO 機器人程式設計挑戰賽 (Kibo-RPC)
-
-Kibo-RPC 是由日本 JAXA 與美國 NASA 共同舉辦的國際競賽。參賽者需透過程式設計，遠端操控國際太空站「希望號 (Kibo)」實驗艙內的自由飛行機器人 Astrobee，完成導航、偵測與任務挑戰。
-
-這是一場結合 演算法設計、機器人控制、感測判斷與策略規劃的競賽，讓學生能在真實太空環境中測試程式並與各國隊伍交流。
-
-### 技術挑戰
-
-參賽隊伍需設計完整的自主控制系統，內容涵蓋：
-
-- 路徑規劃：Astrobee 在無重力空間中精準移動，選擇最佳路徑。
-- 影像辨識：透過相機影像辨識「地標」與「寶物」，並回報結果。
-- 目標判斷與決策：根據太空人給予的線索，確定真正的寶物位置。
-- 任務執行：完成拍照、回報與啟動信號燈等動作，以模擬真實太空作業流程。
-
-整體流程從啟動 → 搜索 → 判斷 → 尋寶 → 回報，不僅考驗演算法效能，也挑戰團隊在電腦視覺、深度學習、導航策略與系統整合上的能力。
-
-### 歷屆成果
-
-- 2025：台灣區預賽第一名，將於 2026 年 1 月赴日參加決賽
-
-<img src="/assets/images/kibo.webp" alt="tdk" style="max-width:40%;">
-
-## 國研盃智慧機械競賽 (ASME)
-
-由 ASME 台灣分會與國家實驗研究院儀科中心自 2019 年起共同舉辦，每年依據 ASME 美國總會所公布的題目進行。競賽分為兩大類：
-
-- 設計競賽：每年有不同的主題，內容貼近生活，鼓勵學生發揮創意，將學理基礎與實務製作結合，完成具體作品。競賽強調 機械設計、動力裝置、系統整合與實作能力。
-
-- 演講競賽：參賽者以英文發表與機械相關的主題，強調 議題分析、專業表達與個人研究成果分享，而非英文口說能力測驗。
-
-優勝隊伍除獲得獎金與證書外，並有機會代表台灣參加 ASME 全球總決賽，與世界各國學生交流。
-
-### 歷屆成果
-
-- 2025：設計競賽 第三名
-- 2023：設計競賽 第三名
-- 2022：設計競賽 佳作
-- 2021：演講競賽 第二名、設計競賽 第三名
-
-## 專案作品
-
-<!-- 今年的那台 -->
-<!-- [圖片]() -->
-<!-- 描述 -->
+</div>
