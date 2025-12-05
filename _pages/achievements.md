@@ -106,25 +106,34 @@ nav-menu: true
 </details>
 
 <style>
-/* 整體卡片 */
+/* 整體卡片 - 統一 About 頁面風格 */
 .detail-card {
-  border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.1); /* 半透明白色背景 */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* 淺色邊框 */
   border-radius: 8px;
   padding: 0;
   margin-bottom: 1.5rem;
   overflow: hidden;
+  backdrop-filter: blur(5px); /* 毛玻璃效果 */
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.detail-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 /* 顯示為卡片標題 */
 .detail-card summary {
   padding: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.15em;
   cursor: pointer;
   list-style: none;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  color: inherit;
 }
 
 /* 移除預設的箭頭（避免重複）*/
@@ -149,6 +158,7 @@ nav-menu: true
 .detail-content {
   padding: 1rem;
   line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* 分隔線 */
 }
 
 /* 圖片置中 */
@@ -175,7 +185,7 @@ nav-menu: true
 .detail-table th,
 .detail-table td {
   padding: 0.4rem 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 調整分隔線顏色 */
   text-align: left;
 }
 </style>
