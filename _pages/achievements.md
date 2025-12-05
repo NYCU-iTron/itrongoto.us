@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: landing
 title: 團隊成果
 permalink: /achievements/
 description: Team Achievements
