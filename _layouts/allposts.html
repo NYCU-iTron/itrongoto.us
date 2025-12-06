@@ -137,12 +137,13 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 100%;
-        min-height: 320px;
         position: relative;
         background-size: cover;
         background-position: center;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        aspect-ratio: 4 / 3;
+        min-height: 0;
       }
 
       /* 圖片暗化遮罩 - 只在下方 */
@@ -241,47 +242,105 @@
         transform: translateX(4px);
       }
 
-      /* 手機版本: 調整為側邊圖片 */
+      /* 手機版本: 保持背景圖片設計 */
       @media (max-width: 767px) {
+        .posts-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
         .post-card {
-          display: grid;
-          grid-template-columns: 100px 1fr;
-          gap: 1rem;
-          min-height: auto;
-          height: auto;
-          background-image: none !important;
-          background-color: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          aspect-ratio: 16 / 9;
         }
 
         .post-card-overlay {
-          display: none;
-        }
-
-        .post-image {
-          width: 100px;
-          height: 100px;
-          border-radius: 8px;
-          grid-row: 1 / 3;
+          height: 75%;
         }
 
         .post-content {
-          padding: 0;
-          grid-column: 2;
-          justify-content: flex-start;
+          padding: 1.25rem 1rem;
         }
 
         .post-title {
-          font-size: 1.1rem;
-          margin: 0 0 0.5rem 0;
+          font-size: 1rem;
+          margin: 0.5rem 0 0 0;
+          line-height: 1.3;
         }
 
-        .post-excerpt {
-          display: none;
+        .post-date {
+          font-size: 0.75rem;
+          margin: 0 0 0.25rem 0;
         }
 
         .year-title {
           font-size: 1.5rem;
+        }
+      }
+
+      /* 平板版本 */
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .posts-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
+        }
+
+        .post-card {
+          aspect-ratio: 4 / 3;
+        }
+
+        .post-card-overlay {
+          height: 85%;
+        }
+
+        .post-content {
+          padding: 1.5rem 1.25rem;
+        }
+
+        .post-title {
+          font-size: 1.15rem;
+          margin: 0.5rem 0 0 0;
+        }
+
+        .post-date {
+          font-size: 0.8rem;
+          margin: 0 0 0.25rem 0;
+        }
+      }
+
+      /* 桌面版本 */
+      @media (min-width: 1024px) {
+        .posts-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.5rem;
+        }
+
+        .post-card {
+          aspect-ratio: 4 / 3;
+        }
+
+        .post-card-overlay {
+          height: 90%;
+        }
+
+        .post-content {
+          padding: 2rem 1.5rem;
+        }
+
+        .post-title {
+          font-size: 1.25rem;
+          margin: 0.5rem 0 1rem 0;
+        }
+
+        .post-date {
+          font-size: 0.85rem;
+          margin: 0 0 0.5rem 0;
+        }
+      }
+
+      /* 桌面版隱藏手機專用圖片 */
+      @media (min-width: 768px) {
+        .post-image.mobile-only {
+          display: none;
         }
       }
 
