@@ -4,7 +4,7 @@
     {% assign tiles = site.pages | where_exp: "item", "item.show_tile != false" %}
 {% endif %} -->
 
-{% assign tile_order = site.tiles-order | default: "/about/,/achievements/,/learning/,/blog/,/gallery/,/join/" %}
+{% assign tile_order = site.tiles-order | default: "/about/,/learning/,/achievements/,/join/,/blog/,/gallery/" %}
 {% assign tile_urls = tile_order | split: "," %}
 {% assign tiles = "" | split: "" %}
 
