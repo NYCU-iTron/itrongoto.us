@@ -6,11 +6,9 @@ description: About us
 image: assets/images/about.webp
 nav-menu: true
 ---
-**iTron** 由一群渴望將理想拼成現實的機械系同學組成。我們參與如 TDK、ASME、Kibo-RPC 等大型競賽磨練技術，將腦海中構思的創意付諸實現。
+**iTron** 由一群不甘於理論，決心以親手打造之機器人在世界展露頭角的機械系學生所組成。我們充滿熱情與創意，在繁忙的學業之餘，鑽研機器人技術，並參加各類國內外競賽，力求突破自我。名次只是順手的成果，而真正使我們茁壯的，是旅途中的每一個挑戰與學習。
 
-除了在比賽中追求卓越，這裡更是一個 **技術傳承** 與 **尋找夥伴** 的平台，我們透過高強度的實作與交流，成為彼此最強大的後盾。
-
-在社團內，我們聚集各路好手，依據興趣和專長分為三大領域：
+這裡更是一個 **技術傳承** 與 **尋找夥伴** 的平台，我們透過高強度的實作與交流，成為彼此最強大的後盾。社團內，我們聚集各路好手，依據興趣和專長分為三大領域：
 
 <div class="about-grid">
   <!-- 機構組 -->
@@ -18,7 +16,7 @@ nav-menu: true
     <span class="group-icon">⚙️</span>
     <div class="group-title">機構組</div>
     <div class="group-desc">
-      負責機器人的骨架與肌肉。從 3D 設計繪圖、材料選用到加工組裝，將抽象概念轉化為實體結構。
+      打造機器人的血肉。從 3D 設計繪圖、材料選用到加工組裝，將抽象概念轉化為實體結構。
     </div>
   </div>
   
@@ -27,7 +25,7 @@ nav-menu: true
     <span class="group-icon">💻</span>
     <div class="group-title">軟體組</div>
     <div class="group-desc">
-      賦予機器人靈魂。專注於導航、路徑規劃、感測器整合、控制演算法，讓機器人精準執行任務。
+      賦予機器人靈魂。專注於決策演算法、感測器整合與控制系統，避免機器人成為邪惡的存在。
     </div>
   </div>
 
@@ -36,18 +34,17 @@ nav-menu: true
     <span class="group-icon">☁️</span>
     <div class="group-title">雲端組</div>
     <div class="group-desc">
-      神祕的非正式小組，由程式高手默默維護網站、伺服器等看不見卻不能壞的系統。
+      神祕的非正式小組，默默維護網站、社群、伺服器等基礎設施。
     </div>
   </div>
 </div>
-
 
 從基礎訓練開始，逐步挑戰更高難度的專案與競賽。無論你是初學者還是已有經驗的同學，都能在這裡找到適合自己的舞台。
 
 <div class="cta-section">
   <h3>對我們感興趣嗎？</h3>
-  <p>如果你想了解更多關於加入 iTron 的詳細資訊</p>
-  <a href="/join/" class="btn-action">前往招生專區 &rarr;</a>
+  <p>如果你想了解加入 iTron 後能學到什麼、參與哪些活動</p>
+  <a href="/learning/" class="btn-action">前往教學規劃頁面 &rarr;</a>
 </div>
 
 <style>
