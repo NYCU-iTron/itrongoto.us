@@ -298,16 +298,20 @@
 
 					var href = $(this).attr('href');
 
-					event.preventDefault();
 					event.stopPropagation();
 
-					// Hide.
+					// 如果是頁內錨點 (#)，保留原本的延遲邏輯，讓選單收起後再捲動
+					if (href.charAt(0) === '#') {
+						event.preventDefault();
 						$menu._hide();
-
-					// Redirect.
 						window.setTimeout(function() {
 							window.location.href = href;
 						}, 250);
+					} else {
+						// 如果是換頁連結，直接關閉選單並允許預設跳轉行為
+						// 這樣可以消除 250ms 的卡頓感
+						$menu._hide();
+					}
 
 				});
 
