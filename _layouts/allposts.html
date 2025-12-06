@@ -32,16 +32,8 @@
                 {% for post in year_group.items %}
                   {% if post.title != 404 %}
                   <a href="{{ post.url | relative_url }}" class="post-card-link">
-                    <article class="post-card">
-                      {% if post.image %}
-                        <div class="post-image">
-                          <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}" />
-                        </div>
-                      {% else %}
-                        <div class="post-image placeholder">
-                          <span>📝</span>
-                        </div>
-                      {% endif %}
+                    <article class="post-card" {% if post.image %}style="background-image: url('{{ site.baseurl }}/{{ post.image }}');"{% endif %}>
+                      <div class="post-card-overlay"></div>
                       
                       <div class="post-content">
                         {% if post.date %}
@@ -50,13 +42,6 @@
                         
                         <h2 class="post-title">{{ post.title }}</h2>
                         
-                        <!-- {% if post.excerpt %}
-                          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-                        {% else %}
-                          <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 30 }}</p>
-                        {% endif %} -->
-                        
-                        <!-- <span class="post-link">繼續閱讀 →</span> -->
                       </div>
                     </article>
                   </a>
@@ -145,20 +130,40 @@
 
       .post-card {
         background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: none;
         border-radius: 12px;
         overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         height: 100%;
+        min-height: 320px;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      /* 圖片暗化遮罩 - 只在下方 */
+      .post-card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 90%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+        transition: background 0.3s ease;
+      }
+
+      .post-card-link:hover .post-card-overlay {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
       }
 
       .post-card-link:hover .post-card {
         transform: translateY(-8px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-        border-color: rgba(255, 255, 255, 0.3);
-        background: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        filter: brightness(1.1);
       }
 
       /* 圖片區域 */
@@ -189,10 +194,11 @@
 
       /* 內容區域 */
       .post-content {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
         display: flex;
         flex-direction: column;
-        flex-grow: 1;
+        position: relative;
+        z-index: 2;
       }
 
       .post-date {
@@ -235,22 +241,34 @@
         transform: translateX(4px);
       }
 
-      /* 手機版本: 單欄 */
+      /* 手機版本: 調整為側邊圖片 */
       @media (max-width: 767px) {
         .post-card {
           display: grid;
-          grid-template-columns: 120px 1fr;
+          grid-template-columns: 100px 1fr;
           gap: 1rem;
+          min-height: auto;
+          height: auto;
+          background-image: none !important;
+          background-color: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .post-card-overlay {
+          display: none;
         }
 
         .post-image {
-          height: 120px;
-          width: 120px;
+          width: 100px;
+          height: 100px;
           border-radius: 8px;
+          grid-row: 1 / 3;
         }
 
         .post-content {
           padding: 0;
+          grid-column: 2;
+          justify-content: flex-start;
         }
 
         .post-title {
