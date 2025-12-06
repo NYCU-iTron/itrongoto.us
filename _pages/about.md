@@ -44,7 +44,7 @@ nav-menu: true
 <div class="cta-section">
   <h3>對我們感興趣嗎？</h3>
   <p>如果你想了解加入 iTron 後能學到什麼、參與哪些活動</p>
-  <a href="/learning/" class="btn-action">前往教學規劃頁面 &rarr;</a>
+  <a href="/learning/" class="btn-action">前往教學資源頁面 &rarr;</a>
 </div>
 
 <style>

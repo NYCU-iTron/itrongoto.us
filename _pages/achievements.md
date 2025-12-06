@@ -105,6 +105,12 @@ nav-menu: true
   </div>
 </details>
 
+<div class="cta-section">
+  <h3>對我們的感興趣嗎？</h3>
+  <p>如果你想了解如何加入 iTron</p>
+  <a href="/join/" class="btn-action">前往加入頁面 &rarr;</a>
+</div>
+
 <style>
 /* 整體卡片 - 統一 About 頁面風格 */
 .detail-card {
@@ -188,4 +194,14 @@ nav-menu: true
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 調整分隔線顏色 */
   text-align: left;
 }
+
+  .cta-section {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    /* background: rgba(255, 255, 255, 0.05); 極淡的背景 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #eee;
+  }
 </style>
