@@ -19,20 +19,258 @@
       <!-- One -->
       <section id="one">
 	<div class="inner">
-          {% for post in site.posts %}
-	  {% if post.title != 404 %}
-	  <header class="major">
-	    <h1>{{ post.title }}</h1>
-	  </header>
-	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-	  {% if post.date %}<p>{{ post.date }}</p>{% endif %}
-	  <p>{{ post.content }}</p>
-	  {% endif %}
+          
+          <!-- 文章卡片網格 (按年份分組) -->
+          {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
+          
+          {% for year_group in posts_by_year %}
+            {% if year_group.name != "404" %}
+            <div class="year-section">
+              <h2 class="year-title">{{ year_group.name }} 年</h2>
+              
+              <div class="posts-grid">
+                {% for post in year_group.items %}
+                  {% if post.title != 404 %}
+                  <a href="{{ post.url | relative_url }}" class="post-card-link">
+                    <article class="post-card">
+                      {% if post.image %}
+                        <div class="post-image">
+                          <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}" />
+                        </div>
+                      {% else %}
+                        <div class="post-image placeholder">
+                          <span>📝</span>
+                        </div>
+                      {% endif %}
+                      
+                      <div class="post-content">
+                        {% if post.date %}
+                          <p class="post-date">{{ post.date | date: "%m 月 %d 日" }}</p>
+                        {% endif %}
+                        
+                        <h2 class="post-title">{{ post.title }}</h2>
+                        
+                        <!-- {% if post.excerpt %}
+                          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                        {% else %}
+                          <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 30 }}</p>
+                        {% endif %} -->
+                        
+                        <!-- <span class="post-link">繼續閱讀 →</span> -->
+                      </div>
+                    </article>
+                  </a>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+            {% endif %}
           {% endfor %}
 	</div>
       </section>
 
     </div>
+
+    <style>
+      /* 年份分組 */
+      .year-section {
+        margin-bottom: 4rem;
+      }
+
+      .year-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid rgba(13, 110, 253, 0.5);
+        display: inline-block;
+      }
+
+      /* 文章卡片網格容器 */
+      .posts-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      /* 平板: 2 欄 */
+      @media (min-width: 768px) {
+        .posts-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* 桌面: 3 欄 */
+      @media (min-width: 1024px) {
+        .posts-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.5rem;
+        }
+      }
+
+      /* 寬螢幕: 讓網格居中且有適當邊距 */
+      @media (min-width: 1280px) {
+        .year-section {
+          width: 100%;
+        }
+
+        .posts-grid {
+          width: 100%;
+          margin: 2rem 0 0 0;
+        }
+      }
+
+      /* 卡片連結包裝 - 整個區塊可點擊 */
+      .post-card-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        border: none;
+      }
+
+      .post-card-link:hover {
+        text-decoration: none;
+        border-bottom: none;
+      }
+
+      .post-card-link:focus,
+      .post-card-link:focus-visible,
+      .post-card-link:active {
+        text-decoration: none;
+        border-bottom: none;
+        outline: none !important;
+      }
+
+      .post-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .post-card-link:hover .post-card {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        border-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      /* 圖片區域 */
+      .post-image {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(75, 0, 130, 0.1));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .post-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .post-card-link:hover .post-image img {
+        transform: scale(1.05);
+      }
+
+      .post-image.placeholder {
+        font-size: 3rem;
+      }
+
+      /* 內容區域 */
+      .post-content {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      .post-date {
+        font-size: 0.85rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin: 0 0 0.5rem 0;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
+
+      .post-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 0.5rem 0 1rem 0;
+        line-height: 1.4;
+        color: #fff;
+      }
+
+      .post-excerpt {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0 0 1.5rem 0;
+        line-height: 1.6;
+        flex-grow: 1;
+      }
+
+      /* 繼續閱讀按鈕 */
+      .post-link {
+        display: inline-block;
+        color: #0d6efd;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+        align-self: flex-start;
+      }
+
+      .post-card-link:hover .post-link {
+        color: #0b5ed7;
+        transform: translateX(4px);
+      }
+
+      /* 手機版本: 單欄 */
+      @media (max-width: 767px) {
+        .post-card {
+          display: grid;
+          grid-template-columns: 120px 1fr;
+          gap: 1rem;
+        }
+
+        .post-image {
+          height: 120px;
+          width: 120px;
+          border-radius: 8px;
+        }
+
+        .post-content {
+          padding: 0;
+        }
+
+        .post-title {
+          font-size: 1.1rem;
+          margin: 0 0 0.5rem 0;
+        }
+
+        .post-excerpt {
+          display: none;
+        }
+
+        .year-title {
+          font-size: 1.5rem;
+        }
+      }
+
+      .post-card-link:focus-visible {
+        outline: none;
+      }
+    </style>
 
     {% include footer.html %}
 
