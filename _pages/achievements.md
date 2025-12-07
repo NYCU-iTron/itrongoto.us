@@ -33,6 +33,7 @@ nav-menu: true
     </ul>
     <div class="detail-image">
       <img src="/assets/images/tdk.webp" alt="TDK">
+      <img src="/assets/images/gallery/2025-10-07-tdk-3.webp" alt="TDK">
     </div>
     <h4>歷屆成果</h4>
     <table class="detail-table">
