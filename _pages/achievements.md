@@ -106,6 +106,27 @@ nav-menu: true
   </div>
 </details>
 
+<!-- TDK -->
+<details class="detail-card">
+  <summary>
+    ICT 實驗室創意實作競賽 - 2025 第一屆 亞軍
+  </summary>
+
+  <div class="detail-content">
+    <p>
+      ICT 實驗室創意實作競賽旨在鼓勵本校學生以動手實作為核心，結合 ICT 技術與創新思維，將創意構想轉化為具體成果。競賽鼓勵跨院、跨系組隊，培養跨領域整合能力與實務應用經驗，展現學生在資訊與通訊科技領域的創新潛力與專業實力。
+    </p>
+    <div class="detail-image">
+      <img src="/assets/images/ICT-Competition.webp" alt="ict">
+    </div>
+    <h4>歷屆成果</h4>
+    <table class="detail-table">
+      <tr><th>年份</th><th>成績</th></tr>
+      <tr><td>2025</td><td>亞軍</td></tr>
+    </table>
+  </div>
+</details>
+
 <div class="cta-section">
   <h3>對我們的感興趣嗎？</h3>
   <p>如果你想了解如何加入 iTron</p>
