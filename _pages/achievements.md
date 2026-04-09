@@ -98,6 +98,7 @@ nav-menu: true
     <h4>歷屆成果</h4>
     <table class="detail-table">
       <tr><th>年份</th><th>成績</th></tr>
+      <tr><td>2026</td><td>設計競賽 評審團佳作</td></tr>
       <tr><td>2025</td><td>設計競賽 第三名</td></tr>
       <tr><td>2023</td><td>設計競賽 第三名</td></tr>
       <tr><td>2022</td><td>設計競賽 佳作</td></tr>
