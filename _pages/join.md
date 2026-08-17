@@ -14,6 +14,8 @@ nav-menu: true
 
 現在就加入我們吧！一起挑戰自我，打造理想中的機器，並在比賽與專案中創造屬於自己的成就！
 
+歡迎填寫[表單](https://forms.gle/jJuYGbG89rZfSCeC7)，報名參加
+
 <div class="cta-section">
   <h3>新生說明會</h3>
   <p>📅 9 月 17 日（四）</p>
